@@ -1,5 +1,25 @@
+h1 {
+    color: green;
+    text-decoration: double underline overline;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid red;
+    text-align: center;
+  }
+
+thead {
+    color: blue;
+}
+
+caption {
+    font-weight: bold;
+}
+
 body {
     background-color: mintcream;
+    
 }
 
 .chapter {
