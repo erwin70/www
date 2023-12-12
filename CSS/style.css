@@ -1,11 +1,18 @@
-h1 {
+h1.titel {
     color: green;
     text-decoration: double underline overline;
     text-align: center;
 }
 
+p.codeBox {
+    background-color: lightgray;
+    border:2px solid blue;
+    }
+    
+}
+
 table, th, td {
-   border-collapse: collapse;
+    border: 1px solid red;
     text-align: center;
   }
 
@@ -26,7 +33,7 @@ body {
     position: relative;
     margin-bottom: 1px;
     width: 100%;
-    color: darkgreen;
+    color: black;
     overflow: hidden;
 }
 
