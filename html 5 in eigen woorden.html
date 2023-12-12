@@ -21,7 +21,7 @@
         <label class="chapterlabel" for="chapter1">We beginnen onze cursus met de basis opmaak die nodig is voor een html pagina.</label>
     <div class="chapter-content">
 
-        <p>Eerst laat ik even zien hoe die er uit ziet en daarna geef ik er uitleg over ter verduidelijking.</p> 
+        <p>Eerst laat ik even zien hoe de code eruit ziet en daarna geef ik uitleg ter verduidelijking.</p> 
     <pre>
     <p class="codeBox">&lt;!Doctype html&gt;<br>
         <span style="color:red">&lt;html lang="nl"&gt;</span><br>
@@ -53,8 +53,8 @@
         <input id="chapter2" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter2">Commentaar, paragraaf, nieuwe regel starten en nieuw onderwerp starten zonder nieuwe pagina</label>
     <div class="chapter-content">
-       <p class="codeBox"> <!-- Hier voeg ik commentaar voor html -->
-        <span style ="color: green;"> &lt;!--</span> <span style ="color: blue;">Hier tussen voeg ik commentaar in voor html </span><span style ="color: green;"> --&gt;</span></p>
+       <p class="codeBox"> <!-- Hier tussen deze tekens voeg ik commentaar ter info -->
+        <span style ="color: green;"> &lt;!--</span> <span style ="color: blue;">Hier tussen  deze tekens voeg ik commentaar te info</span><span style ="color: green;"> --&gt;</span></p>
        <p>Deze commentaar is niet zichtbaar op de pagina maar enkel in de bron</p><hr>
         <p class="codeBox"> &lt;p&gt;Dit is een paragraaf, alle tekst wordt nu gewoon aan elkaar geschreven. Een paragraaf heeft altijd een witruimte boven en onder.&lt;br&gt; <br>
         Wil je de volgende zin beginnen op de volgende rij zonder witruimte ertussen dan gebruik je de (break) tag &lt;br&gt; .<br>
@@ -87,19 +87,37 @@
         <input id="chapter4" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter4">Tekstopmaak</label>
     <div class="chapter-content">
-        <p><u>Deze tekst is onderlijnd,</u></p>
+        <p class="codeBox">&lt;u&gt;Deze tekst is underlined (onderlijnd) &lt;/u&gt;</p>
+        <p><u>Deze tekst is underlined (onderlijnd)</u></p>
+
+        <p class="codeBox">&lt;s&gt;Deze tekst is doorstreept&lt;/s&gt; of &lt;strike&gt;Dit kan ook&lt;/strike&gt;</p>
         <p><s>Deze tekst is doorstreept</s> of <strike>Dit kan ook</strike></p>
-        <P>Deze &lt;em&gt;<em>teks</em>t&lt;/em&gt; is emphasized.<br>
-         Deze tekst wordt schuin geschreven en met intonatie uitgesproken door de voorlezer.</P>
-        <p>Deze &lt;strong&gt;<strong>tekst</strong>&lt;/strong&gt; is strong.<br>
-            Deze tekst wordt vet gedrukt en luider worden uitgesproken door de voorlezer.</p>
-        <p>Deze <mark>tekst</mark> is gehiglight met mark.<br>
-            Deze tekst wil de nadruk leggen op de daarna volgende tekst, bijvoorbeeld: <mark>Let op !!! </mark>En hier komt de tekst waar ik op moet letten.</p>
-        <p><u>Volgende teksten hebben geen invloed op het voorlezen.</u></p>
-        <p>Deze <i>tekst</i> is italic geschreven.</p>
-        <p>Deze <b>tekst</b> is bolt geschreven.</p>
+
+        <p class="codeBox"> Deze &lt;em&gt;<em>tekst</em>&lt;/em&gt; is emphasized (benadrukt).</p>
+        <P>Deze <em>tekst</em> is emphasized (benadrukt).</p>
+        <p>Het woord "tekst" wordt schuin geschreven en met intonatie uitgesproken door de voorlezer.<br>
+        Voor schuine tekst die geen invloed heeft op het voorlezen gebruik je &lt;i&gt; italic</P>
+        <p class="codeBox">Deze &lt;i&gt;tekst&lt;/i&gt; is italic (cursief) geschreven.</p>
+        <p>Deze <i>tekst</i> is italic (cursief) geschreven.</p>
+
+        <p class="codeBox">Deze &lt;strong&gt;<strong>tekst</strong>&lt;/strong&gt; is strong (krachtig).<br></p>
+        <p>Deze <strong>tekst</strong> is strong (krachtig).</p>
+        <p>Deze tekst wordt vet gedrukt en wordt luider uitgesproken door de voorlezer.<br>
+        Voor vet gedrukte tekst die geen invloed heeft op het voorlezen gebruik je &lt;b&gt; bolt</P></p>
+
+        <p class="codeBox">Deze &lt;b&gt;tekst&lt;/b&gt; is bolt (vetgedrukt) geschreven.</p>
+        <p>Deze <b>tekst</b> is bolt (vetgedrukt) geschreven.</p>
+
+
+        <p class="codeBox">Deze &lt;mark&gt;tekst&lt;/mark&gt; is gehiglight met mark (marker = markeerstift).<br>
+        <p>Deze <mark>tekst</mark> is gehiglight met mark (marker = markeerstift).</p>
+        <p>Deze tekst wil de nadruk leggen op de daarna volgende tekst, bijvoorbeeld: <mark>Let op !!! </mark>En hier komt de tekst waar je op moet letten.</p>
+        
+        <p class="codeBox">Deze &lt;span style="color:blue"&gt;tekst&lt;/span&gt; moet opvallen.</p>
         <p>Deze <span style="color:blue">tekst</span> moet opvallen.</p>
-        <p><small>Deze tekst wordt kleiner geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen of voetnotes.</p><hr>
+
+        <p class="codeBox">&lt;small&gt;Deze tekst wordt small (klein) geschreven &lt;/small&gt;>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p><hr>
+        <p><small>Deze tekst wordt small (klein) geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p><hr>
     </div>  
     </div>
 
