@@ -1,0 +1,25 @@
+body {
+    background-color: mintcream;
+    
+}
+
+h1.titel {
+    color: green;
+    text-decoration: double underline overline;
+    text-align: center;
+}
+
+/* De tabs die in de cursus geleerd zijn zien blauw */
+.tabKlaar {
+    color: blue;
+}
+
+/* De tabs die niet meer mogen gebruikt worden en oud zijn, zijn rood */
+.tabOud {
+    color: red;
+}
+
+/* De tabs die in de cursus niet geleerd zijn zien zwart */
+.tabNog {
+    color: black;
+}

@@ -1,3 +1,8 @@
+body {
+    background-color: mintcream;
+    
+}
+
 h1.titel {
     color: green;
     text-decoration: double underline overline;
@@ -9,12 +14,24 @@ p.codeBox {
     border:2px solid blue;
     }
     
-}
-
-table, th, td {
-    border: 1px solid red;
-    text-align: center;
-  }
+    #kamers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      
+      #kamers td, #kamers th {
+        border: 1px solid #aaa;
+        padding: 8px;
+      }
+            
+      #kamers tr:hover {background-color: #ddd;}
+      
+      #kamers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: blue;
+      }
 
 thead {
     color: blue;
@@ -24,15 +41,13 @@ caption {
     font-weight: bold;
 }
 
-body {
-    background-color: mintcream;
-    
-}
+
 
 .chapter {
     position: relative;
     margin-bottom: 1px;
-    width: 100%;
+    margin-left: 5%;
+    width:90%;
     color: black;
     overflow: hidden;
 }
@@ -67,7 +82,7 @@ label.chapterlabel {
 }
 
 input:checked ~ .chapter-content {
-    max-height: 800px;
+    max-height: 2000px;
 }
 
 label.chapterlabel::after {

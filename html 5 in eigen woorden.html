@@ -90,8 +90,8 @@
         <p class="codeBox">&lt;u&gt;Deze tekst is underlined (onderlijnd) &lt;/u&gt;</p>
         <p><u>Deze tekst is underlined (onderlijnd)</u></p>
 
-        <p class="codeBox">&lt;s&gt;Deze tekst is doorstreept&lt;/s&gt; of &lt;strike&gt;Dit kan ook&lt;/strike&gt;</p>
-        <p><s>Deze tekst is doorstreept</s> of <strike>Dit kan ook</strike></p>
+        <p class="codeBox">&lt;s&gt;Deze tekst is doorstreept&lt;/s&gt;(strikethrough = doorhalen)</p>
+        <p><s>Deze tekst is doorstreept</s>(strikethrough = doorhalen)</p>
 
         <p class="codeBox"> Deze &lt;em&gt;<em>tekst</em>&lt;/em&gt; is emphasized (benadrukt).</p>
         <P>Deze <em>tekst</em> is emphasized (benadrukt).</p>
@@ -116,32 +116,38 @@
         <p class="codeBox">Deze &lt;span style="color:blue"&gt;tekst&lt;/span&gt; moet opvallen.</p>
         <p>Deze <span style="color:blue">tekst</span> moet opvallen.</p>
 
-        <p class="codeBox">&lt;small&gt;Deze tekst wordt small (klein) geschreven &lt;/small&gt;>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p><hr>
-        <p><small>Deze tekst wordt small (klein) geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p><hr>
+        <p class="codeBox">&lt;small&gt;Deze tekst wordt small (klein) geschreven &lt;/small&gt;>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
+        <p><small>Deze tekst wordt small (klein) geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
+        
+        <p class="codeBox">H&lt;sub&gt;2&lt;/sub&gt;O is subscript (onderschrift)</p>
+        <p>H<sub>2</sub>O is subscript (onderschrift)</p>
+
+        <p class="codeBox">1&lt;sup&gt;e&lt;/sup&gt; is supscript (bovenschrift)</p>
+        <p>1<sup>e</sup> is supscript (bovenschrift)</p>
+
     </div>  
     </div>
 
+ 
+
     <div class="chapter">
         <input id="chapter5" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter5">Sub-supscript</label>
+        <label class="chapterlabel" for="chapter5">Definitie / afkortingen</label>
     <div class="chapter-content">
-        <p>H<sub>2</sub>O is subscript</p>
-        <p>1<sup>e</sup> is supscript</p>  
+
+        <p class="codeBox">&lt;dfn title="Het vormgeven van een webpagina"&gt;Webdisign&lt;/dfn&gt;</p>
+        <p><dfn title="Het vormgeven van een webpagina">Webdisign</dfn></p>        
+        <p>Als je nu met de muis over het woord webdisign gaat krijg je de betekenis te zien.</p>
+
+        <p class="codeBox">&lt;abbr title="abbreviation (afkorting)">abbr&lt;/abbr&gt;</abbr></p>
+        <p><abbr title="abbreviation (afkorting)">abbr</abbr></p>
+        <p>Ga maar eens met de muis over 'abbr' voor de betekenis. </p> 
     </div>  
     </div>
 
     <div class="chapter">
         <input id="chapter6" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter6">Definitie / afkortingen</label>
-    <div class="chapter-content">
-        <p>Wil je een definitie van een woord bijvoorbeeld: <dfn title="Het vormgeven en ontwerpen van een webpagina">webdisign</dfn> dan gebruik je de tag &lt;DFN title="de betekenis"&gt;, deze sluit je af met &lt;/DFN&gt;. Als je nu met de muis over het woord webdisign gaat krijg je de betekenis te zien.</p>
-        <p>Bij een afkorting gebruik je de tag <abbr title="abbreviation">&lt;ABBR&gt;</abbr> en ook deze moet afgesloten worden.Ga maar eens met de muis over ABBR voor de betekenis. </p><hr>   
-    </div>  
-    </div>
-
-    <div class="chapter">
-        <input id="chapter7" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter7">Blockquotes en quotes en cite</label>
+        <label class="chapterlabel" for="chapter6">Blockquotes en quotes en cite</label>
     <div class="chapter-content">
         <p>Als je een tekst gebruikt van een andere site dan moet je dit aangeven met de tag &lt;BLOCKQUOTE cite="website waar het vandaan komt"&gt; en &lt;/BLOCKQUOTE&gt;.</p>
         <blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language">HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</blockquote>
@@ -153,8 +159,8 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter8" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter8">Adres gegevens</label>
+        <input id="chapter7" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter7">Adres gegevens</label>
     <div class="chapter-content">
         <p>Bij online verkoop ben je verplicht je adresgegevens achter te laten en dat doe je met de tag ADRESS en /ADRESS, hieronder een voorbeeld</p>
         <address>Erwin Leemans<br>Herendreef 67<br>4527AZ Aardenburg<br>Nederland</address>
@@ -162,8 +168,8 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter9" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter9">Tekens die bedoeld zijn voor HTML code en speciale tekens tonen</label>
+        <input id="chapter8" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter8">Tekens die bedoeld zijn voor HTML code en speciale tekens tonen</label>
     <div class="chapter-content">
         &lt;<br>
          &gt;<br>
@@ -176,8 +182,8 @@
 
 
     <div class="chapter">
-        <input id="chapter10" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter10">Opsommingen/lijsten</label>
+        <input id="chapter9" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter9">Opsommingen/lijsten</label>
     <div class="chapter-content">
         <ol>
             <li>eerste</li>
@@ -267,8 +273,8 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter11" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter11">Aangeven waar een lang woord mog worden afgebroken</label>
+        <input id="chapter10" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter10">Aangeven waar een lang woord mog worden afgebroken</label>
     <div class="chapter-content">
         <h3>bij gewoon woord</h3>
         hotten&shy;totten&shy;tentoon&shy;stelling<br>
@@ -278,8 +284,8 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter12" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter12">Extra witruimte laten zien zoals je deze in de bron typt</label>
+        <input id="chapter11" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter11">Extra witruimte laten zien zoals je deze in de bron typt</label>
     <div class="chapter-content">
         <pre>
             1
@@ -294,16 +300,16 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter13" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter13">Naamwijziging doorvoeren in html</label>
+        <input id="chapter12" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter12">Naamwijziging doorvoeren in html</label>
     <div class="chapter-content">
         <p>Vroeger heette de club <del>ATTV</del>nu <ins datetime="2023-11-05">ATLV</ins> bijvoorbeeld.<br></p>    
     </div>  
     </div>
 
     <div class="chapter">
-        <input id="chapter14" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter14">Weblinks of interne links en link voor bestand downloaden</label>
+        <input id="chapter13" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter13">Weblinks of interne links en link voor bestand downloaden</label>
     <div class="chapter-content">
         <h3>externe link</h3>
         <a href="https://en.wikipedia.org/" title="Bezoek de wikipedia site" target="_blank" hreflang="en">link naar wikipedia</a>
@@ -317,8 +323,8 @@
     </div>
 
     <div class="chapter">
-        <input id="chapter15" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter15">Foto plaatsen</label>
+        <input id="chapter14" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter14">Foto plaatsen</label>
     <div class="chapter-content">
         Ik heb doelbewust de afbeelding weggelaten zodat je ziet wat er komt te staan zonder IMG.<br>
         <img scr="IMG/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"><br>
@@ -330,10 +336,10 @@
     </div>
 
      <div class="chapter">
-        <input id="chapter16" type="checkbox" name="chapters"/>
-        <label class="chapterlabel" for="chapter16">Tabellen</label>
+        <input id="chapter15" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter15">Tabellen</label>
     <div class="chapter-content">
-        <table summary="Overzicht van alle kamers">
+        <table id="kamers" summary="Overzicht van alle kamers">
     
         <caption>Alle kamers</caption> 
                                                             
@@ -352,7 +358,7 @@
                     <th>14</th>
                     <th>16</th>
                     <th>20</th>
-                    <th>22</th>
+                    <th>20</th>
                     <th>18</th>
                     <th>03</th>
                     <th>04</th>
