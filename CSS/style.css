@@ -82,7 +82,7 @@ label.chapterlabel {
 }
 
 input:checked ~ .chapter-content {
-    max-height: 2000px;
+    max-height: 5000px;
 }
 
 label.chapterlabel::after {
@@ -102,4 +102,19 @@ input[type=checkbox] + label.chapterlabel::after {
 
 input[type=checkbox]:checked + label.chapterlabel::after {
     content: "-";
+}
+
+/* De tabs die in de cursus geleerd zijn zien blauw */
+.tabKlaar {
+    color: blue;
+}
+
+/* De tabs die niet meer mogen gebruikt worden en oud zijn, zijn rood */
+.tabOud {
+    color: red;
+}
+
+/* De tabs die in de cursus niet geleerd zijn zien zwart */
+.tabNog {
+    color: black;
 }

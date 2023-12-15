@@ -150,11 +150,22 @@
         <label class="chapterlabel" for="chapter6">Blockquotes en quotes en cite</label>
     <div class="chapter-content">
         <p>Als je een tekst gebruikt van een andere site dan moet je dit aangeven met de tag &lt;BLOCKQUOTE cite="website waar het vandaan komt"&gt; en &lt;/BLOCKQUOTE&gt;.</p>
-        <blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language">HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</blockquote>
-        Als je een citaat van iemand gebruikt dan gebruik je de tag &lt;Q&gt; en &lt;/Q&gt;<br>
+
+        <p class="codeBox">&#60;blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"&#62;HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal
+             voor de specificatie van documenten,        voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.&#60;/blockquote&#62;</p>
+
+        <blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language">HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten,
+        voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</blockquote>
+
+        <p>Als je een citaat of korte quote van iemand gebruikt dan gebruik je de tag &lt;Q&gt; en &lt;/Q&gt;</p>
+
+        <p class="codeBox">Hierna volgt een korte quote: &#60;q&gt;Onze beste vrienden zijn familie die we zelf kiezen.&lt;/q&gt;</p>
         <p>Hierna volgt een korte quote: <q>Onze beste vrienden zijn familie die we zelf kiezen.</q></p>
-        Als je bijvoorbeeld een titel van een boek gebruikt dan gebruik je de tag &lt;CITE&gt; en &lt;/CITE&gt;<br>
-        Bijvoorbeeld: <cite>Harry Potter en de Vuurbeker</cite>  
+
+        <p>Als je bijvoorbeeld een titel van een boek gebruikt dan gebruik je de tag &lt;CITE&gt; en &lt;/CITE&gt;</p>
+        <p class="codeBox">Bijvoorbeeld: &#60;cite&gt;Harry Potter en de Vuurbeker&lt;/cite&gt;</p>
+
+        <p>Bijvoorbeeld: <cite>Harry Potter en de Vuurbeker</cite></p>
     </div>  
     </div>
 
@@ -162,7 +173,10 @@
         <input id="chapter7" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter7">Adres gegevens</label>
     <div class="chapter-content">
-        <p>Bij online verkoop ben je verplicht je adresgegevens achter te laten en dat doe je met de tag ADRESS en /ADRESS, hieronder een voorbeeld</p>
+        <p>Bij online verkoop ben je verplicht je adresgegevens achter te laten en dat doe je met  &lt;ADRESS&gt; en &lt;/ADRESS&gt;, hieronder een voorbeeld</p>
+
+        <p class="codeBox">&lt;address&gt;Erwin Leemans&lt;br&gt;Herendreef 67&lt;br&gt;4527AZ Aardenburg&lt;br&gt;Nederland&lt;/address&gt;</p>
+
         <address>Erwin Leemans<br>Herendreef 67<br>4527AZ Aardenburg<br>Nederland</address>
     </div>  
     </div>
@@ -171,12 +185,15 @@
         <input id="chapter8" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter8">Tekens die bedoeld zijn voor HTML code en speciale tekens tonen</label>
     <div class="chapter-content">
+        <p>Als je speciale tekens wil tonen op jouw pagina of tekens die bedoeld zijn voor HTMLcode dan voegen we deze toe door een tekencodering "utf-8"  </p>
+        <p>Weet je nog in onze basis opmaak voor een HTML pagina dat we dit hadden toegevoegd:  &lt;meta charset="UTF-8"&gt;
+        <p class="codeBox">&amp;lt&semi;&lt;br&gt; &amp;gt&semi; &lt;br&gt; &amp;copy&semi;&lt;br&gt; &amp;euro&semi;&lt;br&gt; &amp;amp&lt;br&gt;</p>
         &lt;<br>
          &gt;<br>
         &copy;<br>
         &euro;<br>
         &amp;<br>
-        <a href="//en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">Wikipedia info speciale tekens</a>  
+        <h2><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank" hreflang="en">Wikipedia info speciale tekens</a></h2>
     </div>  
     </div>
 
@@ -185,42 +202,125 @@
         <input id="chapter9" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter9">Opsommingen/lijsten</label>
     <div class="chapter-content">
+        <pre>
+        <p class="codeBox">
+        &lt;ol&gt;
+            &lt;li&gt;eerste&lt;/li&gt;
+            &lt;li&gt;tweede&lt;/li&gt;
+            &lt;li&gt;derde&lt;/li&gt;
+            &lt;li&gt;vierde&lt;/li&gt;
+        &lt;/ol&gt;
+        </p>
+        </pre>
+            
         <ol>
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"A"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="A">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"a"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="a">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"i"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="i">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"I"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="I">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"A" start"4"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="A" start="4">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ol>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ol type"A" start"4" reversed&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ol&gt;
+            </p>
+            </pre>
+
         <ol type="A" start="4" reversed>
             <li>eerste</li>
             <li>tweede</li>
@@ -230,24 +330,71 @@
         
         <hr>
 
+        <pre>
+            <p class="codeBox">
+            &lt;ul&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ul&gt;
+            </p>
+            </pre>
+
         <ul>
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ul>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ul type"square"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ul&gt;
+            </p>
+            </pre>
+
         <ul type="square">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ul>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ul type"circle"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ul&gt;
+            </p>
+            </pre>
+
             <ul type="circle">
             <li>eerste</li>
             <li>tweede</li>
             <li>derde</li>
             <li>vierde</li>
         </ul>
+
+        <pre>
+            <p class="codeBox">
+            &lt;ul type"disc"&gt;
+                &lt;li&gt;eerste&lt;/li&gt;
+                &lt;li&gt;tweede&lt;/li&gt;
+                &lt;li&gt;derde&lt;/li&gt;
+                &lt;li&gt;vierde&lt;/li&gt;
+            &lt;/ul&gt;
+            </p>
+            </pre>
+
         <ul type="disc">
             <li>eerste</li>
             <li>tweede</li>
@@ -257,13 +404,25 @@
         
         <hr>
 
+        <pre>
+            <p class="codeBox">
+                &lt;dl&gt;
+                    &lt;dt&gt;kleerkast&lt;/dt&gt;
+                        &lt;dd&gt;ondergoed&lt;/dd&gt;
+                        &lt;dd&gt;hemden&lt;/dd&gt;
+                        &lt;dd&gt;broeken&lt;/dd&gt;
+                    &lt;dt&gt;bureau&lt;/dt&gt;
+                        &lt;dd&gt;papier&lt;/dd&gt;
+                        &lt;dd&gt;pen&lt;/dd&gt;
+                        &lt;dd&gt;kaft&lt;/dd&gt;
+                &lt;/dl&gt;
+            </p>
+        </pre>
         <dl>
             <dt>kleerkast</dt>
                 <dd>ondergoed</dd>
                 <dd>hemden</dd>
                 <dd>broeken</dd>
-        </dl>
-        <dl>
             <dt>bureau</dt>
                 <dd>papier</dd>
                 <dd>pen</dd>
@@ -277,8 +436,10 @@
         <label class="chapterlabel" for="chapter10">Aangeven waar een lang woord mog worden afgebroken</label>
     <div class="chapter-content">
         <h3>bij gewoon woord</h3>
+        <p class="codeBox">hotten&amp;shy&semi;totten&amp;shy&semi;tentoon&amp;shy&semi;stelling</p>
         hotten&shy;totten&shy;tentoon&shy;stelling<br>
         <h3>Bij website url afkorten</h3>
+        <p  class="codeBox"> http://www.holand&lt;wbr&gt;ventilatie&lt;wbr&gt;organisatie.nl</p>
         http://www.holand<wbr>ventilatie<wbr>organisatie.nl<br>  
     </div>  
     </div>
@@ -287,13 +448,30 @@
         <input id="chapter11" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter11">Extra witruimte laten zien zoals je deze in de bron typt</label>
     <div class="chapter-content">
+        <p>Non-breaking space teken = &amp;nbsp&semi;</p>
+        <p  class="codeBox">1 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 2 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 3 </p>
+        <p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p>
+        <p>Of je kan dit met veel minder code, je zet tussen &lt;pre&gt; en &lt;/pre&gt; tekst die moet getoond worden op de pagina zoals je het hebt geschreven</p>
+
+        <p  class="codeBox">
+        &lt;pre&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br>
+        &lt;/pre&gt;
+        </p>
+
         <pre>
             1
-                2
-                    3  
-                        4
-                    5
-                6
+                   2
+                           3  
+                                  4
+                           5
+                   6
             7
         </pre>
     </div>  
@@ -303,6 +481,7 @@
         <input id="chapter12" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter12">Naamwijziging doorvoeren in html</label>
     <div class="chapter-content">
+        <p  class="codeBox">Vroeger heette de club &lt;del&gt;ATTV&lt;/del&gt;nu &lt;ins datetime="2023-11-05"&gt;ATLV&lt;/ins&gt; bijvoorbeeld.<br></p>
         <p>Vroeger heette de club <del>ATTV</del>nu <ins datetime="2023-11-05">ATLV</ins> bijvoorbeeld.<br></p>    
     </div>  
     </div>
@@ -389,5 +568,147 @@
         </table>   
     </div>  
     </div>
+
+    <div class="chapter">
+        <input id="chapter16" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter16">HTML elementreferentie</label>
+    <div class="chapter-content">
+        <h2><a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a></p>
+    <pre>
+        <h3>
+            <span class="tabKlaar">&#60;!DOCTYPE&#62;</span>
+            <span class="tabKlaar">&#60;a&#62;&#60;/a&#62;</span>
+            <span class="tabOud">&#60;acronym&#62;&#60;/acronym&#62;</span> nu <span class="tabKlaar">&#60;abbr&#62;&#60;/abbr&#62;</span>
+            <span class="tabKlaar">&#60;address&#62;&#60;/address&#62;</span>
+            <span class="tabOud">&#60;applet&#62;&#60;/applet&#62;</span> nu &#60;embed&#62; of &#60;object&#62;&#60;/object&#62;
+            &#60;area&#62;
+            &#60;article&#62;&#60;/article&#62;
+            &#60;aside&#62;&#60;/aside&#62;
+            &#60;audio&#62;&#60;/audio&#62;
+            <span class="tabKlaar">&#60;b&#62;&#60;/b&#62;</span>
+            &#60;base&#62;
+            <span class="tabOud">&#60;basefont&#62;&#60;/basefont&#62;</span> nu via css
+            &#60;bdi&#62;&#60;/bdi&#62;
+            &#60;bdo&#62;&#60;/bdo&#62;
+            <span class="tabOud">&#60;big&#62;&#60;/big&#62;</span> nu via css
+            <span class="tabKlaar">&#60;blockquote&#62;&#60;/blockquote&#62;</span>
+            <span class="tabKlaar">&#60;body&#62;&#60;/body&#62;</span>
+            <span class="tabKlaar">&#60;br&#62;</span>
+            &#60;button&#62;&#60;/button&#62;
+            &#60;canvas&#62;&#60;/canvas&#62;
+            &#60;caption&#62;&#60;/caption&#62;
+            <span class="tabOud">&#60;center&#62;&#60;/center&#62;</span> nu via CSS
+            <span class="tabKlaar">&#60;cite&#62;&#60;/cite&#62;</span>
+            &#60;code&#62;&#60;/code&#62;
+            &#60;col&#62;
+            &#60;colgroup&#62;&#60;/colgroup&#62;
+            &#60;data&#62;&#60;/data&#62;
+            &#60;datalist&#62;&#60;/datalist&#62;
+            <span class="tabKlaar">&#60;dd&#62;&#60;/dd&#62;</span>
+            <span class="tabKlaar">&#60;del&#62;&#60;/del&#62;</span>
+            &#60;details&#62;&#60;/details&#62;
+            <span class="tabKlaar">&#60;dfn&#62;&#60;/dfn&#62;</span>
+            &#60;dialog&#62;&#60;/dialog&#62;
+            <span class="tabOud">&#60;dir&#62;&#60;/dir&#62;</span> nu &#60;ul&#62;&#60;/ul&#62;
+            <span class="tabKlaar">&#60;div&#62;&#60;/div&#62;</span>
+            <span class="tabKlaar">&#60;dl&#62;&#60;/dl&#62;</span>
+            <span class="tabKlaar">&#60;dt&#62;&#60;/dt&#62;</span>
+            <span class="tabKlaar">&#60;em&#62;&#60;/em&#62;</span>
+            &#60;embed&#62;
+            &#60;fieldset&#62;
+            &#60;figcaption&#62;
+            &#60;figure&#62;
+            <span class="tabOud">&#60;font&#62;</span> nu via CSS
+            <span class="tabKlaar">&#60;footer&#62;</span>
+            &#60;form&#62;
+            &#60;frame&#62;&#60;/frame&#62;
+            &#60;frameset&#62;&#60;/frameset&#62;
+            <span class="tabKlaar">&#60;h1&#62;&#60;/h1&#62; tot &#60;h6&#62;&#60;/h6&#62;</span>
+            <span class="tabKlaar">&#60;head&#62;&#60;/head&#62;</span>
+            <span class="tabKlaar">&#60;header&#62;&#60;/header&#62;</span>
+            &#60;hgroup&#62;&#60;/hgroup&#62;
+            <span class="tabKlaar">&#60;hr&#62;</span>
+            <span class="tabKlaar">&#60;html&#62;&#60;/html&#62;</span>
+            <span class="tabKlaar">&#60;i&#62;&#60;/i&#62;</span>
+            &#60;iframe&#62;&#60;/iframe&#62;
+            &#60;img&#62;
+            &#60;input&#62;
+            <span class="tabKlaar">&#60;ins&#62;&#60;/ins&#62;</span>
+            &#60;kbd&#62;&#60;/kbd&#62;
+            &#60;label&#62;&#60;/label&#62;
+            &#60;legend&#62;&#60;/legend&#62;
+            <span class="tabKlaar">&#60;li&#62;&#60;/li&#62;</span>
+            &#60;link&#62;
+            &#60;main&#62;&#60;/main&#62;
+            &#60;map&#62;&#60;/map&#62;
+            <span class="tabKlaar">&#60;mark&#62;&#60;/mark&#62;</span>
+            &#60;menu&#62;&#60;/menu&#62;
+            <span class="tabKlaar">&#60;meta&#62;</span>
+            &#60;meter&#62;&#60;/meter&#62;
+            &#60;nav&#62;&#60;/nav&#62;
+            &#60;noframes&#62;&#60;/noframes&#62;
+            &#60;noscript&#62;&#60;/noscript&#62;
+            &#60;object&#62;&#60;/object&#62;
+            <span class="tabKlaar">&#60;ol&#62;&#60;/ol&#62;</span>
+            &#60;optgroup&#62;&#60;/optgroup&#62;
+            &#60;option&#62;&#60;/option&#62;
+            &#60;output&#62;&#60;/output&#62;
+            <span class="tabKlaar">&#60;p&#62;&#60;/p&#62;</span>
+            &#60;param&#62;
+            &#60;picture&#62;&#60;/picture&#62;
+            &#60;pre&#62;&#60;/pre&#62;
+            &#60;progress&#62;&#60;/progress&#62;
+            <span class="tabKlaar">&#60;q&#62;&#60;/q&#62;</span>
+            &#60;rp&#62;&#60;/rp&#62;
+            &#60;rt&#62;&#60;/rt&#62;
+            &#60;ruby&#62;&#60;/ruby&#62;
+            <span class="tabKlaar">&#60;s&#62;&#60;/s&#62;</span>
+            &#60;samp&#62;&#60;/samp&#62;
+            &#60;script&#62;&#60;/script&#62;
+            &#60;search&#62;&#60;/search&#62;
+            &#60;section&#62;&#60;/section&#62;
+            &#60;select&#62;&#60;/select&#62;
+            <span class="tabKlaar">&#60;small&#62;&#60;/small&#62;</span>
+            &#60;source&#62;
+            <span class="tabKlaar">&#60;span&#62;&#60;/span&#62;</span>
+            <span class="tabOud">&#60;strike&#62;&#60;/strike&#62;</span> nu &#60;del&#62;&#60;/del&#62; of &#60;s&#62;&#60;/s&#62;
+            <span class="tabKlaar">&#60;strong&#62;&#60;/strong&#62;</span>
+            <span class="tabKlaar">&#60;style&#62;&#60;/style&#62;</span>
+            <span class="tabKlaar">&#60;sub&#62;&#60;/sub&#62;</span>
+            &#60;summary&#62;&#60;/summary&#62;
+            <span class="tabKlaar">&#60;sup&#62;&#60;/sup&#62;</span>
+            &#60;svg&#62;&#60;/svg&#62;
+            <span class="tabKlaar">&#60;table&#62;&#60;/table&#62;</span>
+            <span class="tabKlaar">&#60;tbody&#62;&#60;/tbody&#62;</span>
+            <span class="tabKlaar">&#60;td&#62;&#60;/td&#62;</span>
+            &#60;template&#62;&#60;/template&#62;
+            &#60;textarea&#62;&#60;/textarea&#62;
+            <span class="tabKlaar">&#60;tfoot&#62;&#60;/tfoot&#62;</span>
+            <span class="tabKlaar">&#60;th&#62;&#60;/th&#62;</span>
+            <span class="tabKlaar">&#60;thead&#62;&#60;/thead&#62;</span>
+            &#60;time&#62;&#60;/time&#62;
+            &#60;title&#62;&#60;/title&#62;
+            <span class="tabKlaar">&#60;tr&#62;&#60;/tr&#62;</span>
+            &#60;track&#62;
+            <span class="tabOud">&#60;tt&#62;&#60;/tt&#62;</span> nu via CSS
+            <span class="tabKlaar">&#60;u&#62;&#60;/u&#62;</span>
+            <span class="tabKlaar">&#60;ul&#62;&#60;/ul&#62;</span>
+            &#60;var&#62;&#60;/var&#62;
+            &#60;video&#62;&#60;/video&#62;
+            <span class="tabKlaar">&#60;wbr&#62;</span>
+        </h3>
+        </pre>
+    </div>
+    </div>
+
+    <div class="chapter">
+        <input id="chapter17" type="checkbox" name="chapters"/>
+        <label class="chapterlabel" for="chapter17">Handige links voor HTML gebruikers</label>
+    <div class="chapter-content">
+        <h2><a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a><br>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default" title="frontend-editor html-css-js" target="_blank" hreflang="en">frontend-editor html-css-js</a><br>
+            <a href="https://www.w3docs.com/tools/html-encoder/" title="HTML code omzetten" target="_blank" hreflang="en">HTML code omzetten</a><br>
+            <a href="https://code.visualstudio.com/" title="HTML editor Visual Studio Code" target="_blank" hreflang="en">HTML editor Visual Studio Code</a></h2>
+
 </body> 
 </html>
