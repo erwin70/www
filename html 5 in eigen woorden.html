@@ -491,13 +491,14 @@
         <label class="chapterlabel" for="chapter13">Weblinks of interne links en link voor bestand downloaden</label>
     <div class="chapter-content">
         <h3>externe link</h3>
-        <a href="https://en.wikipedia.org/" title="Bezoek de wikipedia site" target="_blank" hreflang="en">link naar wikipedia</a>
+        <p  class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;link naar wikipedia&lt;/a&gt;</p>
+        <a href="www.wikipedia.org/" target="_blank">link naar wikipedia</a>
         <h3>interne links</h3>
-        <a href="JS in eigen woorden.html " title="Bezoek ook de info voor JS" target="_blank" hreflang="en">Js in eigen woorden</a><br>
-        <a href="../onderliggend.html " title="link naar onderliggende map" target="_blank" hreflang="en">link naar onderliggende map</a><br>
-        <a href="cursus/bovenliggen.html " title="link naar bovenliggende map" target="_blank" hreflang="en">link naar bovenliggende map</a>
+        <p  class="codeBox">&lt;a href="index.html " target="_blank"&gt;Terug naar de index pagina&lt;/a&gt;</p>
+        <p  class="codeBox">&lt;a href="../index.html " target="_blank"&gt;de index pagina in onderliggende map&lt;/a&gt;</p>
+        <p  class="codeBox">&lt;a href="cursus/inex.html " target="_blank"&gt;de index pagina in bovenliggende map cursus&lt;/a&gt;</p>
         <h3>link naar een bestand</h3>
-        <a href="cursus/cursus.pdf " title="Download de pdf">PDF downloaden</a>  
+        <p  class="codeBox">&lt;href="PDF/cursus.pdf "&gt;PDF downloaden&lt;/a&gt;</p>
     </div>  
     </div>
 
@@ -505,12 +506,26 @@
         <input id="chapter14" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter14">Foto plaatsen</label>
     <div class="chapter-content">
-        Ik heb doelbewust de afbeelding weggelaten zodat je ziet wat er komt te staan zonder IMG.<br>
-        <img scr="IMG/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"><br>
-        Een jpg is altijd met witopvulling gif of png kan wel transparant zijn terwijlgif toch nog een wit randje achterlaat.<br>
+        <p>Ik heb doelbewust de eerste afbeelding weggelaten in de map IMG zodat je ziet wat er komt te staan als er geen afbeelding is.</p>
+
+        <p  class="codeBox">
+        &lt;img src="img/geen_kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;
+        &lt;img src="img/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;</p>
+        
+        <img src="img/geen_kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje">
+        <img src="img/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"><br><br>
+
+        Een jpg is altijd een vierkante foto met achtergrondopvulling, een gif of png kan wel transparant zijn terwijl gif toch nog een wit randje achterlaat.<br><br>
+        In volgend voorbeeld zien we het verschil tussen jpg, gif en png<br>
+        <p>
+            <img src="img/wikipedia.jpg" width="350px" height="350px">
+            <img src="img/wikipedia.gif" width="350px" height="350px">
+            <img src="img/wikipedia.png" width="350px" height="350px"></p>
+
         <h3>Een foto als link gebruiken</h3>
-        <a href="https://en.wikipedia.org/" title="Bezoek de wikipedia site" target="_blank" hreflang="en"><img scr="IMG/kerk.jpg" width="150px" height="150px" alt="Afbeelding van kerk" title="kerk in spanje"></a><br><hr>
-        <h3>Tabellen</h3>    
+        <p  class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;&lt;img src="IMG/wikipedia.png" width="150px" height="150px" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"&gt;</a></p>
+        <a href="https://en.wikipedia.org/" target="_blank"><img src="IMG/wikipedia.png" width="150px" height="150px" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"></a><br><hr>
+   
     </div>  
     </div>
 
@@ -518,6 +533,56 @@
         <input id="chapter15" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter15">Tabellen</label>
     <div class="chapter-content">
+<p class="codeBox">
+        &#60;table summary="Overzicht van alle kamers"&#62;<br>
+        <br>
+        &#60;caption&#62;Alle kamers&#60;/caption&#62; <br>
+        <br>                                                   
+        &#60;thead&#62;<br>
+                &#60;tr&#62;<br>
+                    &#60;th colspan="2"&#62;Standard&#60;/th&#62;<br>
+                    &#60;th colspan="2"&#62;Comfort&#60;/th&#62;<br>
+                    &#60;th&#62;budget&#60;/th&#62;<br>
+                    &#60;th&#62;suites&#60;/th&#62;<br>
+                    &#60;th&#62;mini suite&#60;/th&#62;<br>
+                &#60;/tr&#62;<br>
+        &#60;/thead&#62;<br>
+        <br>                                                   
+        &#60;tfoot&#62;<br>
+                &#60;tr&#62;<br>
+                    &#60;th&#62;14&#60;/th&#62;<br>
+                    &#60;th&#62;16&#60;/th&#62;<br>
+                    &#60;th&#62;20&#60;/th&#62;<br>
+                    &#60;th&#62;20&#60;/th&#62;<br>
+                    &#60;th&#62;18&#60;/th&#62;<br>
+                    &#60;th&#62;03&#60;/th&#62;<br>
+                    &#60;th&#62;04&#60;/th&#62;<br>
+                &#60;/tr&#62;<br>
+        &#60;/tfoot&#62;<br>
+        <br>                                    
+        &#60;tbody&#62;<br>
+                &#60;tr&#62;<br>
+                    &#60;td&#62;01&#60;/td&#62;<br>
+                    &#60;td&#62;16&#60;/td&#62;<br>
+                    &#60;td&#62;32&#60;/td&#62;<br>
+                    &#60;td&#62;52&#60;/td&#62;<br>
+                    &#60;td&#62;72&#60;/td&#62;<br>
+                    &#60;td&#62;90&#60;/td&#62;<br>
+                    &#60;td&#62;93&#60;/td&#62;<br>
+                &#60;/tr&#62;<br>
+                <br>                                        
+                &#60;tr&#62;<br>
+                    &#60;td&#62;15&#60;/td&#62;<br>
+                    &#60;td&#62;31&#60;/td&#62;<br>
+                    &#60;td&#62;51&#60;/td&#62;<br>
+                    &#60;td&#62;71&#60;/td&#62;<br>
+                    &#60;td&#62;89&#60;/td&#62;<br>
+                    &#60;td&#62;93&#60;/td&#62;<br>
+                    &#60;td&#62;96&#60;/td&#62;<br>
+                &#60;/tr&#62;<br>
+        &#60;/tbody&#62;<br>
+        &#60;/table&#62;  <br> 
+</p>
         <table id="kamers" summary="Overzicht van alle kamers">
     
         <caption>Alle kamers</caption> 
@@ -705,7 +770,8 @@
         <input id="chapter17" type="checkbox" name="chapters"/>
         <label class="chapterlabel" for="chapter17">Handige links voor HTML gebruikers</label>
     <div class="chapter-content">
-        <h2><a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a><br>
+        <h2><a href="https://www.handleidinghtml.nl/html/elementen/elementen.html" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van handleidinghtml.nl</a><br>
+            <a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a><br>
             <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default" title="frontend-editor html-css-js" target="_blank" hreflang="en">frontend-editor html-css-js</a><br>
             <a href="https://www.w3docs.com/tools/html-encoder/" title="HTML code omzetten" target="_blank" hreflang="en">HTML code omzetten</a><br>
             <a href="https://code.visualstudio.com/" title="HTML editor Visual Studio Code" target="_blank" hreflang="en">HTML editor Visual Studio Code</a></h2>
