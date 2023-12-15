@@ -114,7 +114,7 @@ input[type=checkbox]:checked + label.chapterlabel::after {
     color: red;
 }
 
-/* De tabs die in de cursus niet geleerd zijn zien zwart */
+/* De tabs die in de cursus niet geleerd zijn zien zwart maar dit moet niet want die zijn standard zwart */
 .tabNog {
     color: black;
 }
