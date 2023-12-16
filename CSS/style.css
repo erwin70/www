@@ -1,3 +1,21 @@
+nav {
+background-color: darkseagreen;
+}
+
+.hoofding {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+button {
+    background-color: mintcream;
+    border:3px solid green;
+    font-size: 30px;
+}
+
 body {
     background-color: mintcream;
     

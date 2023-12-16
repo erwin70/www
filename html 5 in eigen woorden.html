@@ -17,6 +17,19 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <span class="hoofding">Cursus webdesign&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="index.html"><button>Home</button></a>
+                <a href="index.html"><button>Git-Guthub</button></a>
+                <a href="index.html"><button>HTML</button></a>
+                <a href="index.html"><button>CSS</button></a>
+                <a href="index.html"><button>JavaScript</button></a>
+                <a href="index.html"><button>SQL</button></a>
+            </span>
+        </nav>
+    </header>
+
     <h1 class="titel">Cursus HTML 5</h1>
     <div class="chapter">
         <input id="chapter1" type="checkbox" name="chapters">
@@ -494,19 +507,23 @@
             <p class="codeBox">&lt;a href="../index.html " target="_blank"&gt;de index pagina in onderliggende map&lt;/a&gt;</p>
             <p class="codeBox">&lt;a href="cursus/inex.html " target="_blank"&gt;de index pagina in bovenliggende map cursus&lt;/a&gt;</p>
             <h3>link naar een bestand</h3>
-            <p class="codeBox">&lt;href="PDF/cursus.pdf "&gt;PDF downloaden&lt;/a&gt;</p>
+            <p class="codeBox">&lt;a href="PDF/cursus.pdf "&gt;PDF downloaden&lt;small&gt;&lt;button&gt;PDF Cursus&lt;/button&gt;&lt;/small&gt;&lt;/a&gt;</p>
+            <p>
+                <a href="PDF/cursus.pdf">PDF downloaden<small><button>PDF Cursus</button></small></a>
+            </p>
         </div>
     </div>
 
     <div class="chapter">
         <input id="chapter14" type="checkbox" name="chapters">
-        <label class="chapterlabel" for="chapter14">Foto plaatsen</label>
+        <label class="chapterlabel" for="chapter14">Foto, geluid of video plaatsen</label>
         <div class="chapter-content">
+            <h2>Afbeelding toevoegen</h2>
             <p>Ik heb doelbewust de eerste afbeelding weggelaten in de map IMG zodat je ziet wat er komt te staan als er geen afbeelding is.</p>
 
             <p class="codeBox">
-                &lt;img src="img/geen_kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;
-                &lt;img src="img/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;</p>
+                &lt;img src="img/geen_kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje"&gt;
+                &lt;img src="img/kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje"&gt;</p>
 
             <img src="img/geen_kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje">
             <img src="img/kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje"><br><br>
@@ -519,9 +536,45 @@
                 <img src="img/wikipedia.png" width="350" height="350" alt="Afbeelding van wikipedia">
             </p>
 
+
+
             <h3>Een foto als link gebruiken</h3>
-            <p class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;&lt;img src="IMG/wikipedia.png" width="150px" height="150px" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"&gt;&lt;/a&gt;</p>
+            <p class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;&lt;img src="IMG/wikipedia.png" width="150" height="150" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"&gt;&lt;/a&gt;</p>
             <a href="https://en.wikipedia.org/" target="_blank"><img src="IMG/wikipedia.png" width="150" height="150" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"></a><br>
+            <hr>
+
+            <h2>Audio toevoegen</h2>
+
+            <p class="codeBox">
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="MP3/1.mp3" type="audio/mp3"&gt;<br>
+                &lt;/audio&gt;
+            </p>
+
+            <p>
+                <audio controls>
+                    <source src="MP3/1.mp3" type="audio/mp3">
+                </audio>
+            </p>
+            <hr>
+
+            <h2>Video toevoegen</h2>
+            <p class="codeBox">
+                &lt;video controls&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="MP4/1.mp4" type="audio/mp4"&gt;<br>
+                &lt;/video&gt;
+            </p>
+            <p>
+                <video controls width="300" height="200">
+                    <source src="mp4/1.mp4" type="video/mp4">
+                </video>
+            </p>
+            <h3>Video van youtube (kijk vorige video hoe deze code te kopieren)</h3>
+            <p class="codeBox">
+                &lt;iframe width="300" height="200" src="https://www.youtube.com/embed/Gb9ElvxZYZ8?si=YfE69ZVOzAXv4rVC" title="YouTube video player" frameborder="0"
+                allow="accelerometer&semi; autoplay&semi; clipboard-write&semi; encrypted-media&semi; gyroscope&semi; picture-in-picture&semi; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+            </p>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/Gb9ElvxZYZ8?si=YfE69ZVOzAXv4rVC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </div>
     </div>
@@ -640,7 +693,7 @@
             &#60;area&#62;
             &#60;article&#62;&#60;/article&#62;
             &#60;aside&#62;&#60;/aside&#62;
-            &#60;audio&#62;&#60;/audio&#62;
+            <span class="tabKlaar">&#60;audio&#62;&#60;/audio&#62;</span>
             <span class="tabKlaar">&#60;b&#62;&#60;/b&#62;</span>
             &#60;base&#62;
             <span class="tabOud">&#60;basefont&#62;&#60;/basefont&#62;</span> nu via css
@@ -750,7 +803,7 @@
             <span class="tabKlaar">&#60;u&#62;&#60;/u&#62;</span>
             <span class="tabKlaar">&#60;ul&#62;&#60;/ul&#62;</span>
             &#60;var&#62;&#60;/var&#62;
-            &#60;video&#62;&#60;/video&#62;
+            <span class="tabKlaar">&#60;video&#62;&#60;/video&#62;</span>
             <span class="tabKlaar">&#60;wbr&#62;</span>
     </pre>
         </div>
@@ -762,12 +815,13 @@
         <div class="chapter-content">
             <h2><a href="https://www.handleidinghtml.nl/html/elementen/elementen.html" title="HTML elementreferentie van w3school">HTML elementreferentie van handleidinghtml.nl</a><br>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org/html</a>
+                <a href="https://gsnedders.html5.org/outliner/">HTML outliner html5.org</a>
+                <a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school">HTML elementreferentie van w3school</a><br>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default">frontend-editor html-css-js</a><br>
+                <a href="https://www.w3docs.com/tools/html-encoder/">HTML code omzetten</a><br>
+                <a href="https://code.visualstudio.com/">HTML editor Visual Studio Code</a><br>
+                <a href="https://validator.w3.org/nu/">W3c HTML validator</a>
             </h2>
-            <a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school">HTML elementreferentie van w3school</a><br>
-            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default">frontend-editor html-css-js</a><br>
-            <a href="https://www.w3docs.com/tools/html-encoder/">HTML code omzetten</a><br>
-            <a href="https://code.visualstudio.com/">HTML editor Visual Studio Code</a><br>
-            <a href="https://validator.w3.org/nu/">W3c HTML validator</a>
 
 
         </div>
