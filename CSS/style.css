@@ -12,6 +12,9 @@ h1.titel {
 p.codeBox {
     background-color: lightgray;
     border:2px solid blue;
+    margin-left: 5%;
+    width:55%;
+
     }
     
     #kamers {
@@ -46,8 +49,8 @@ caption {
 .chapter {
     position: relative;
     margin-bottom: 1px;
-    margin-left: 5%;
-    width:90%;
+    margin-left: 15%;
+    width:70%;
     color: black;
     overflow: hidden;
 }
