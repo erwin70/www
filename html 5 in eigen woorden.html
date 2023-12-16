@@ -1,400 +1,406 @@
 <!Doctype html>
 <html lang="nl">
+
 <head>
-<title>HTML 5 in eigen woorden</title>
-<!-- De volgende lijn zorgt ervoor dat we de tekencodering kunnen gebruiken die bijna alle speciale tekens omvat die we in europa gebruiken  -->
-<meta charset="UTF-8">
-<!-- De naam van de auteur van deze pagina -->
-<meta name="author" content="Erwin Leemans">
-<!-- De kernwoorden waar onze pagina over gaat -->
-<meta name="keywords" content="JavaScript, cursus">
-<!-- De korte uitleg over deze pagina -->
-<meta name="description" content=" In eenvoudige taal JavaScript uitgelegd">
-<!-- Deze regel zorgt er voor dat onze pagina zich automatisch aanpast aan eender welke breedte van scherm -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>  
-<body> 
+    <title>HTML 5 in eigen woorden</title>
+    <!-- De volgende lijn zorgt ervoor dat we de tekencodering kunnen gebruiken die bijna alle speciale tekens omvat die we in europa gebruiken  -->
+    <meta charset="UTF-8">
+    <!-- De naam van de auteur van deze pagina -->
+    <meta name="author" content="Erwin Leemans">
+    <!-- De kernwoorden waar onze pagina over gaat -->
+    <meta name="keywords" content="JavaScript, cursus">
+    <!-- De korte uitleg over deze pagina -->
+    <meta name="description" content=" In eenvoudige taal JavaScript uitgelegd">
+    <!-- Deze regel zorgt er voor dat onze pagina zich automatisch aanpast aan eender welke breedte van scherm -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
     <h1 class="titel">Cursus HTML 5</h1>
     <div class="chapter">
         <input id="chapter1" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter1">We beginnen onze cursus met de basis opmaak die nodig is voor een html pagina.</label>
-    <div class="chapter-content">
+        <div class="chapter-content">
 
-        <p>Eerst laat ik even zien hoe de code eruit ziet en daarna geef ik uitleg ter verduidelijking.</p> 
-    
-    <p class="codeBox">&lt;!Doctype html&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">&lt;html lang="nl"&gt;</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:white">&lt;head&gt;</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span style="color:blue">Hier tussen komt de titel van jou pagina</span>&lt;/title&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="author" content="<span style="color:blue">Hier komt jouw naam</span>"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" content="<span style="color:blue">De kernwoorden waar de pagina over gaat</span>"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="<span style="color:blue">Een korte omschrijving</span>"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:white">&lt;/head&gt;</span><br>
-    <span style="color:green">&lt;body&gt;</span><br>
-    <span style="color:blue">Hier tussen komt al jouw code die uiteindelijk de pagina vormt.</span><br>
-    <span style="color:green">&lt;/body&gt;</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">&lt;/html&gt;</span><br><br></p>
-    
-        <p>De eerste lijn is het opgeven in welke programmeertaal we gaan schrijven.<br>
-        &lt;!Doctype html&gt;</p>
+            <p>Eerst laat ik even zien hoe de code eruit ziet en daarna geef ik uitleg ter verduidelijking.</p>
 
-        <p>Daarna schrijven we alle html tussen de &lt;html&gt; en de &lt;/html&gt;.<br>
-        In de openingstag &lt;html&gt; kunnen we ook vermelden in welke taal we onze webpagina gaan schrijven (info voor zoekmachines).<br>
-        Tussen deze 2 &lt;html&gt; tags komen nog de &lt;head&gt; en de &lt;body&gt; tag.</p>
+            <p class="codeBox">&lt;!Doctype html&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">&lt;html lang="nl"&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:white">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span style="color:blue">Hier tussen komt de titel van jou pagina</span>&lt;/title&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="author" content="<span style="color:blue">Hier komt jouw naam</span>"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" content="<span style="color:blue">De kernwoorden waar de pagina over gaat</span>"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="<span style="color:blue">Een korte omschrijving</span>"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:white">&lt;/head&gt;</span><br>
+                <span style="color:green">&lt;body&gt;</span><br>
+                <span style="color:blue">Hier tussen komt al jouw code die uiteindelijk de pagina vormt.</span><br>
+                <span style="color:green">&lt;/body&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">&lt;/html&gt;</span><br><br>
+            </p>
 
-        <p>&lt;meta charset="UTF-8"&gt;<br>
-        Deze lijn zorgt ervoor dat we de tekencodering kunnen gebruiken die bijna alle speciale tekens omvat die we in europa gebruiken.</p>   
-    </div>  
+            <p>De eerste lijn is het opgeven in welke programmeertaal we gaan schrijven.<br>
+                &lt;!Doctype html&gt;</p>
+
+            <p>Daarna schrijven we alle html tussen de &lt;html&gt; en de &lt;/html&gt;.<br>
+                In de openingstag &lt;html&gt; kunnen we ook vermelden in welke taal we onze webpagina gaan schrijven (info voor zoekmachines).<br>
+                Tussen deze 2 &lt;html&gt; tags komen nog de &lt;head&gt; en de &lt;body&gt; tag.</p>
+
+            <p>&lt;meta charset="UTF-8"&gt;<br>
+                Deze lijn zorgt ervoor dat we de tekencodering kunnen gebruiken die bijna alle speciale tekens omvat die we in europa gebruiken.</p>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter2" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter2">Commentaar, paragraaf, nieuwe regel starten en nieuw onderwerp starten zonder nieuwe pagina</label>
-    <div class="chapter-content">
-       <p class="codeBox"> <!-- Hier tussen deze tekens voeg ik commentaar ter info -->
-        <span style ="color: green;"> &lt;!--</span> <span style ="color: blue;">Hier tussen  deze tekens voeg ik commentaar te info</span><span style ="color: green;"> --&gt;</span></p>
-       <p>Deze commentaar is niet zichtbaar op de pagina maar enkel in de bron</p><hr>
-        <p class="codeBox"> &lt;p&gt;Dit is een paragraaf, alle tekst wordt nu gewoon aan elkaar geschreven. Een paragraaf heeft altijd een witruimte boven en onder.&lt;br&gt; <br>
-        Wil je de volgende zin beginnen op de volgende rij zonder witruimte ertussen dan gebruik je de (break) tag &lt;br&gt; .<br>
-        Deze heeft geen eind tag.&lt;/p&gt;</p>
-        <hr>
-        De lijn hierboven wordt gebruikt om een nieuw onderwerp te starten en niet om een scheidingslijn te zetten.<br>
-        Deze heeft geen eind tag.<br>
-        Hierna mag je ook terug opnieuw de tag &lt;H1&gt; gebruiken omdat het een nieuw onderwerp is.<br>
-        <p class="codeBox">De code hier voor is &lt;hr&gt;</p> 
-    </div>  
+        <div class="chapter-content">
+            <p class="codeBox">
+                <!-- Hier tussen deze tekens voeg ik commentaar ter info -->
+                <span style="color: green;"> &lt;!--</span> <span style="color: blue;">Hier tussen deze tekens voeg ik commentaar te info</span><span style="color: green;"> --&gt;</span>
+            </p>
+            <p>Deze commentaar is niet zichtbaar op de pagina maar enkel in de bron</p>
+            <hr>
+            <p class="codeBox"> &lt;p&gt;Dit is een paragraaf, alle tekst wordt nu gewoon aan elkaar geschreven. Een paragraaf heeft altijd een witruimte boven en onder.&lt;br&gt; <br>
+                Wil je de volgende zin beginnen op de volgende rij zonder witruimte ertussen dan gebruik je de (break) tag &lt;br&gt; .<br>
+                Deze heeft geen eind tag.&lt;/p&gt;</p>
+            <hr>
+            De lijn hierboven wordt gebruikt om een nieuw onderwerp te starten en niet om een scheidingslijn te zetten.<br>
+            Deze heeft geen eind tag.<br>
+            Hierna mag je ook terug opnieuw de tag &lt;H1&gt; gebruiken omdat het een nieuw onderwerp is.<br>
+            <p class="codeBox">De code hier voor is &lt;hr&gt;</p>
+        </div>
     </div>
 
 
     <div class="chapter">
         <input id="chapter3" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter3">De hoofding</label>
-    <div class="chapter-content">
-        <p class="codeBox">&lt;H1&gt;Dit is een H1 titel&lt;/H1&gt;</p> 
-        <H1>Dit is een H1 titel</H1>
-        <h2>Een H2 titel</h2>
-        <h3>Een H3 titel</h3>
-        <h4>Een H4 titel</h4>
-        <h5>Een H5 titel</h5>
-        <h6>Een H6 titel</h6>
+        <div class="chapter-content">
+            <p class="codeBox">&lt;H1&gt;Dit is een H1 titel&lt;/H1&gt;</p>
+            <H1>Dit is een H1 titel</H1>
+            <h2>Een H2 titel</h2>
+            <h3>Een H3 titel</h3>
+            <h4>Een H4 titel</h4>
+            <h5>Een H5 titel</h5>
+            <h6>Een H6 titel</h6>
 
-        <p>Om aan te geven dat een paragraaf bij een hoofding hoort gebruik je &#60;hgroup&#62; &#60;/hgroup&#62;</p>
-        
-        <p class="codeBox">&#60;hgroup&#62;<br>
-        &#60;h1&#62;Dit is de titel H1&#60;/h1&#62;<br>
-        &#60;p&#62;dit is de paragraaf die bij H1 hoort&#60;/p&#62;<br>
-        &#60;/hgroup&#62;<br>
-        </p>
+            <p>Om aan te geven dat een paragraaf bij een hoofding hoort gebruik je &#60;hgroup&#62; &#60;/hgroup&#62;</p>
 
-        <hgroup>
-        <h1>Dit is de titel H1</h1>
-        <p>dit is de paragraaf die bij H1 hoort</p>
-        </hgroup>
+            <p class="codeBox">&#60;hgroup&#62;<br>
+                &#60;h1&#62;Dit is de titel H1&#60;/h1&#62;<br>
+                &#60;p&#62;dit is de paragraaf die bij H1 hoort&#60;/p&#62;<br>
+                &#60;/hgroup&#62;<br>
+            </p>
 
-    </div>  
+            <hgroup>
+                <h1>Dit is de titel H1</h1>
+                <p>dit is de paragraaf die bij H1 hoort</p>
+            </hgroup>
+
+        </div>
     </div>
 
- 
+
     <div class="chapter">
         <input id="chapter4" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter4">Tekstopmaak</label>
-    <div class="chapter-content">
-        <p class="codeBox">&lt;u&gt;Deze tekst is underlined (onderlijnd) &lt;/u&gt;</p>
-        <p><u>Deze tekst is underlined (onderlijnd)</u></p>
+        <div class="chapter-content">
+            <p class="codeBox">&lt;u&gt;Deze tekst is underlined (onderlijnd) &lt;/u&gt;</p>
+            <p><u>Deze tekst is underlined (onderlijnd)</u></p>
 
-        <p class="codeBox">&lt;s&gt;Deze tekst is doorstreept&lt;/s&gt;(strikethrough = doorhalen)</p>
-        <p><s>Deze tekst is doorstreept</s>(strikethrough = doorhalen)</p>
+            <p class="codeBox">&lt;s&gt;Deze tekst is doorstreept&lt;/s&gt;(strikethrough = doorhalen)</p>
+            <p><s>Deze tekst is doorstreept</s>(strikethrough = doorhalen)</p>
 
-        <p class="codeBox"> Deze &lt;em&gt;<em>tekst</em>&lt;/em&gt; is emphasized (benadrukt).</p>
-        <P>Deze <em>tekst</em> is emphasized (benadrukt).</p>
-        <p>Het woord "tekst" wordt schuin geschreven en met intonatie uitgesproken door de voorlezer.<br>
-        Voor schuine tekst die geen invloed heeft op het voorlezen gebruik je &lt;i&gt; italic</P>
-        <p class="codeBox">Deze &lt;i&gt;tekst&lt;/i&gt; is italic (cursief) geschreven.</p>
-        <p>Deze <i>tekst</i> is italic (cursief) geschreven.</p>
+            <p class="codeBox"> Deze &lt;em&gt;<em>tekst</em>&lt;/em&gt; is emphasized (benadrukt).</p>
+            <P>Deze <em>tekst</em> is emphasized (benadrukt).</p>
+            <p>Het woord "tekst" wordt schuin geschreven en met intonatie uitgesproken door de voorlezer.<br>
+                Voor schuine tekst die geen invloed heeft op het voorlezen gebruik je &lt;i&gt; italic</P>
+            <p class="codeBox">Deze &lt;i&gt;tekst&lt;/i&gt; is italic (cursief) geschreven.</p>
+            <p>Deze <i>tekst</i> is italic (cursief) geschreven.</p>
 
-        <p class="codeBox">Deze &lt;strong&gt;<strong>tekst</strong>&lt;/strong&gt; is strong (krachtig).<br></p>
-        <p>Deze <strong>tekst</strong> is strong (krachtig).</p>
-        <p>Deze tekst wordt vet gedrukt en wordt luider uitgesproken door de voorlezer.<br>
-        Voor vet gedrukte tekst die geen invloed heeft op het voorlezen gebruik je &lt;b&gt; bolt</p>
+            <p class="codeBox">Deze &lt;strong&gt;<strong>tekst</strong>&lt;/strong&gt; is strong (krachtig).<br></p>
+            <p>Deze <strong>tekst</strong> is strong (krachtig).</p>
+            <p>Deze tekst wordt vet gedrukt en wordt luider uitgesproken door de voorlezer.<br>
+                Voor vet gedrukte tekst die geen invloed heeft op het voorlezen gebruik je &lt;b&gt; bolt</p>
 
-        <p class="codeBox">Deze &lt;b&gt;tekst&lt;/b&gt; is bolt (vetgedrukt) geschreven.</p>
-        <p>Deze <b>tekst</b> is bolt (vetgedrukt) geschreven.</p>
+            <p class="codeBox">Deze &lt;b&gt;tekst&lt;/b&gt; is bolt (vetgedrukt) geschreven.</p>
+            <p>Deze <b>tekst</b> is bolt (vetgedrukt) geschreven.</p>
 
 
-        <p class="codeBox">Deze &lt;mark&gt;tekst&lt;/mark&gt; is gehiglight met mark (marker = markeerstift).<br>
-        <p>Deze <mark>tekst</mark> is gehiglight met mark (marker = markeerstift).</p>
-        <p>Deze tekst wil de nadruk leggen op de daarna volgende tekst, bijvoorbeeld: <mark>Let op !!! </mark>En hier komt de tekst waar je op moet letten.</p>
-        
-        <p class="codeBox">Deze &lt;span style="color:blue"&gt;tekst&lt;/span&gt; moet opvallen.</p>
-        <p>Deze <span style="color:blue">tekst</span> moet opvallen.</p>
+            <p class="codeBox">Deze &lt;mark&gt;tekst&lt;/mark&gt; is gehiglight met mark (marker = markeerstift).<br>
+            <p>Deze <mark>tekst</mark> is gehiglight met mark (marker = markeerstift).</p>
+            <p>Deze tekst wil de nadruk leggen op de daarna volgende tekst, bijvoorbeeld: <mark>Let op !!! </mark>En hier komt de tekst waar je op moet letten.</p>
 
-        <p class="codeBox">&lt;small&gt;Deze tekst wordt small (klein) geschreven &lt;/small&gt;>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
-        <p><small>Deze tekst wordt small (klein) geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
-        
-        <p class="codeBox">H&lt;sub&gt;2&lt;/sub&gt;O is subscript (onderschrift)</p>
-        <p>H<sub>2</sub>O is subscript (onderschrift)</p>
+            <p class="codeBox">Deze &lt;span style="color:blue"&gt;tekst&lt;/span&gt; moet opvallen.</p>
+            <p>Deze <span style="color:blue">tekst</span> moet opvallen.</p>
 
-        <p class="codeBox">1&lt;sup&gt;e&lt;/sup&gt; is supscript (bovenschrift)</p>
-        <p>1<sup>e</sup> is supscript (bovenschrift)</p>
+            <p class="codeBox">&lt;small&gt;Deze tekst wordt small (klein) geschreven &lt;/small&gt;>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
+            <p><small>Deze tekst wordt small (klein) geschreven </small>en wordt meestal gebruikt voor dingen die je niet perse moet lezen zoals voetnotes.</p>
 
-    </div>  
+            <p class="codeBox">H&lt;sub&gt;2&lt;/sub&gt;O is subscript (onderschrift)</p>
+            <p>H<sub>2</sub>O is subscript (onderschrift)</p>
+
+            <p class="codeBox">1&lt;sup&gt;e&lt;/sup&gt; is supscript (bovenschrift)</p>
+            <p>1<sup>e</sup> is supscript (bovenschrift)</p>
+
+        </div>
     </div>
 
- 
+
 
     <div class="chapter">
         <input id="chapter5" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter5">Definitie / afkortingen</label>
-    <div class="chapter-content">
+        <div class="chapter-content">
 
-        <p class="codeBox">&lt;dfn title="Het vormgeven van een webpagina"&gt;Webdisign&lt;/dfn&gt;</p>
-        <p><dfn title="Het vormgeven van een webpagina">Webdisign</dfn></p>        
-        <p>Als je nu met de muis over het woord webdisign gaat krijg je de betekenis te zien.</p>
+            <p class="codeBox">&lt;dfn title="Het vormgeven van een webpagina"&gt;Webdisign&lt;/dfn&gt;</p>
+            <p><dfn title="Het vormgeven van een webpagina">Webdisign</dfn></p>
+            <p>Als je nu met de muis over het woord webdisign gaat krijg je de betekenis te zien.</p>
 
-        <p class="codeBox">&lt;abbr title="abbreviation (afkorting)">abbr&lt;/abbr&gt;</p>
-        <p><abbr title="abbreviation (afkorting)">abbr</abbr></p>
-        <p>Ga maar eens met de muis over 'abbr' voor de betekenis. </p> 
-    </div>  
+            <p class="codeBox">&lt;abbr title="abbreviation (afkorting)">abbr&lt;/abbr&gt;</p>
+            <p><abbr title="abbreviation (afkorting)">abbr</abbr></p>
+            <p>Ga maar eens met de muis over 'abbr' voor de betekenis. </p>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter6" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter6">Blockquotes en quotes en cite</label>
-    <div class="chapter-content">
-        <p>Als je een tekst gebruikt van een andere site dan moet je dit aangeven met de tag &lt;BLOCKQUOTE cite="website waar het vandaan komt"&gt; en &lt;/BLOCKQUOTE&gt;.</p>
+        <div class="chapter-content">
+            <p>Als je een tekst gebruikt van een andere site dan moet je dit aangeven met de tag &lt;BLOCKQUOTE cite="website waar het vandaan komt"&gt; en &lt;/BLOCKQUOTE&gt;.</p>
 
-        <p class="codeBox">&#60;blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"&#62;HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal
-             voor de specificatie van documenten,        voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.&#60;/blockquote&#62;</p>
+            <p class="codeBox">&#60;blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"&#62;HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal
+                voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.&#60;/blockquote&#62;</p>
 
-        <blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language">HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten,
-        voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</blockquote>
+            <blockquote cite="https://nl.wikipedia.org/wiki/HyperText_Markup_Language">HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten,
+                voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</blockquote>
 
-        <p>Als je een citaat of korte quote van iemand gebruikt dan gebruik je de tag &lt;Q&gt; en &lt;/Q&gt;</p>
+            <p>Als je een citaat of korte quote van iemand gebruikt dan gebruik je de tag &lt;Q&gt; en &lt;/Q&gt;</p>
 
-        <p class="codeBox">Hierna volgt een korte quote: &#60;q&gt;Onze beste vrienden zijn familie die we zelf kiezen.&lt;/q&gt;</p>
-        <p>Hierna volgt een korte quote: <q>Onze beste vrienden zijn familie die we zelf kiezen.</q></p>
+            <p class="codeBox">Hierna volgt een korte quote: &#60;q&gt;Onze beste vrienden zijn familie die we zelf kiezen.&lt;/q&gt;</p>
+            <p>Hierna volgt een korte quote: <q>Onze beste vrienden zijn familie die we zelf kiezen.</q></p>
 
-        <p>Als je bijvoorbeeld een titel van een boek gebruikt dan gebruik je de tag &lt;CITE&gt; en &lt;/CITE&gt;</p>
-        <p class="codeBox">Bijvoorbeeld: &#60;cite&gt;Harry Potter en de Vuurbeker&lt;/cite&gt;</p>
+            <p>Als je bijvoorbeeld een titel van een boek gebruikt dan gebruik je de tag &lt;CITE&gt; en &lt;/CITE&gt;</p>
+            <p class="codeBox">Bijvoorbeeld: &#60;cite&gt;Harry Potter en de Vuurbeker&lt;/cite&gt;</p>
 
-        <p>Bijvoorbeeld: <cite>Harry Potter en de Vuurbeker</cite></p>
-    </div>  
+            <p>Bijvoorbeeld: <cite>Harry Potter en de Vuurbeker</cite></p>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter7" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter7">Adres gegevens</label>
-    <div class="chapter-content">
-        <p>Bij online verkoop ben je verplicht je adresgegevens achter te laten en dat doe je met  &lt;ADRESS&gt; en &lt;/ADRESS&gt;, hieronder een voorbeeld</p>
+        <div class="chapter-content">
+            <p>Bij online verkoop ben je verplicht je adresgegevens achter te laten en dat doe je met &lt;ADRESS&gt; en &lt;/ADRESS&gt;, hieronder een voorbeeld</p>
 
-        <p class="codeBox">&lt;address&gt;Erwin Leemans&lt;br&gt;Herendreef 67&lt;br&gt;4527AZ Aardenburg&lt;br&gt;Nederland&lt;/address&gt;</p>
+            <p class="codeBox">&lt;address&gt;Erwin Leemans&lt;br&gt;Herendreef 67&lt;br&gt;4527AZ Aardenburg&lt;br&gt;Nederland&lt;/address&gt;</p>
 
-        <address>Erwin Leemans<br>Herendreef 67<br>4527AZ Aardenburg<br>Nederland</address>
-    </div>  
+            <address>Erwin Leemans<br>Herendreef 67<br>4527AZ Aardenburg<br>Nederland</address>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter8" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter8">Tekens die bedoeld zijn voor HTML code en speciale tekens tonen</label>
-    <div class="chapter-content">
-        <p>Als je speciale tekens wil tonen op jouw pagina of tekens die bedoeld zijn voor HTMLcode dan voegen we deze toe door een tekencodering "utf-8"  </p>
-        <p>Weet je nog in onze basis opmaak voor een HTML pagina dat we dit hadden toegevoegd:  &lt;meta charset="UTF-8"&gt;
-        <p class="codeBox">&amp;lt&semi;&lt;br&gt; &amp;gt&semi; &lt;br&gt; &amp;copy&semi;&lt;br&gt; &amp;euro&semi;&lt;br&gt; &amp;amp&lt;br&gt;</p>
-        &lt;<br>
-         &gt;<br>
-        &copy;<br>
-        &euro;<br>
-        &amp;<br>
-        <h2><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank" hreflang="en">Wikipedia info speciale tekens</a></h2>
-    </div>  
+        <div class="chapter-content">
+            <p>Als je speciale tekens wil tonen op jouw pagina of tekens die bedoeld zijn voor HTMLcode dan voegen we deze toe door een tekencodering "utf-8" </p>
+            <p>Weet je nog in onze basis opmaak voor een HTML pagina dat we dit hadden toegevoegd: &lt;meta charset="UTF-8"&gt;
+            <p class="codeBox">&amp;lt&semi;&lt;br&gt; &amp;gt&semi; &lt;br&gt; &amp;copy&semi;&lt;br&gt; &amp;euro&semi;&lt;br&gt; &amp;amp&lt;br&gt;</p>
+            &lt;<br>
+            &gt;<br>
+            &copy;<br>
+            &euro;<br>
+            &amp;<br>
+            <h2><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank" hreflang="en">Wikipedia info speciale tekens</a></h2>
+        </div>
     </div>
 
 
     <div class="chapter">
         <input id="chapter9" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter9">Opsommingen/lijsten</label>
-    <div class="chapter-content">
-        
-        <p class="codeBox">
-        &lt;ol&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-        &lt;/ol&gt;<br>
-        </p>
-         
-        <ol>
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+        <div class="chapter-content">
 
             <p class="codeBox">
-            &lt;ol type"A"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="A">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+            <ol>
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ol type"a"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol type"A"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="a">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+            <ol type="A">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ol type"i"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol type"a"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="i">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+            <ol type="a">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ol type"I"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol type"i"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="I">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+            <ol type="i">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ol type"A" start"4"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol type"I"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="A" start="4">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
+            <ol type="I">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ol type"A" start"4" reversed&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+                &lt;ol type"A" start"4"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ol type="A" start="4" reversed>
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ol>
-        
+            <ol type="A" start="4">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
 
             <p class="codeBox">
-            &lt;ul&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ul&gt;<br>
+                &lt;ol type"A" start"4" reversed&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
             </p>
 
-        <ul>
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ul>
+            <ol type="A" start="4" reversed>
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ol>
+
 
             <p class="codeBox">
-            &lt;ul style="list-style-type:square"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ul&gt;<br>
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
             </p>
 
-        <ul style="list-style-type:square">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ul>
+            <ul>
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ul>
 
             <p class="codeBox">
-            &lt;ul style="list-style-type:circle"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ul&gt;<br>
+                &lt;ul style="list-style-type:square"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+            </p>
+
+            <ul style="list-style-type:square">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ul>
+
+            <p class="codeBox">
+                &lt;ul style="list-style-type:circle"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
             </p>
 
             <ul style="list-style-type:circle">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ul>
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ul>
 
             <p class="codeBox">
-            &lt;ul style="list-style-type:disc"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
-            &lt;/ul&gt;<br>
+                &lt;ul style="list-style-type:disc"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eerste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;tweede&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;derde&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;vierde&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
             </p>
 
-        <ul style="list-style-type:disc">
-            <li>eerste</li>
-            <li>tweede</li>
-            <li>derde</li>
-            <li>vierde</li>
-        </ul>
-        
-        <hr>
+            <ul style="list-style-type:disc">
+                <li>eerste</li>
+                <li>tweede</li>
+                <li>derde</li>
+                <li>vierde</li>
+            </ul>
+
+            <hr>
 
             <p class="codeBox">
                 &lt;dl&gt;<br>
@@ -408,54 +414,54 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;kaft&lt;/dd&gt;<br>
                 &lt;/dl&gt;<br>
             </p>
-        <dl>
-            <dt>kleerkast</dt>
+            <dl>
+                <dt>kleerkast</dt>
                 <dd>ondergoed</dd>
                 <dd>hemden</dd>
                 <dd>broeken</dd>
-            <dt>bureau</dt>
+                <dt>bureau</dt>
                 <dd>papier</dd>
                 <dd>pen</dd>
                 <dd>kaft</dd>
-        </dl>   
-    </div>  
+            </dl>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter10" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter10">Aangeven waar een lang woord mog worden afgebroken</label>
-    <div class="chapter-content">
-        <h3>bij gewoon woord</h3>
-        <p class="codeBox">hotten&amp;shy&semi;totten&amp;shy&semi;tentoon&amp;shy&semi;stelling</p>
-        hotten&shy;totten&shy;tentoon&shy;stelling<br>
-        <h3>Bij website url afkorten</h3>
-        <p  class="codeBox"> http://www.holand&lt;wbr&gt;ventilatie&lt;wbr&gt;organisatie.nl</p>
-        http://www.holand<wbr>ventilatie<wbr>organisatie.nl<br>  
-    </div>  
+        <div class="chapter-content">
+            <h3>bij gewoon woord</h3>
+            <p class="codeBox">hotten&amp;shy&semi;totten&amp;shy&semi;tentoon&amp;shy&semi;stelling</p>
+            hotten&shy;totten&shy;tentoon&shy;stelling<br>
+            <h3>Bij website url afkorten</h3>
+            <p class="codeBox"> http://www.holand&lt;wbr&gt;ventilatie&lt;wbr&gt;organisatie.nl</p>
+            http://www.holand<wbr>ventilatie<wbr>organisatie.nl<br>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter11" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter11">Extra witruimte laten zien zoals je deze in de bron typt</label>
-    <div class="chapter-content">
-        <p>Non-breaking space teken = &amp;nbsp&semi;</p>
-        <p  class="codeBox">1 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 2 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 3 </p>
-        <p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p>
-        <p>Of je kan dit met veel minder code, je zet tussen &lt;pre&gt; en &lt;/pre&gt; tekst die moet getoond worden op de pagina zoals je het hebt geschreven</p>
+        <div class="chapter-content">
+            <p>Non-breaking space teken = &amp;nbsp&semi;</p>
+            <p class="codeBox">1 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 2 &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; &amp;nbsp&semi; 3 </p>
+            <p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p>
+            <p>Of je kan dit met veel minder code, je zet tussen &lt;pre&gt; en &lt;/pre&gt; tekst die moet getoond worden op de pagina zoals je het hebt geschreven</p>
 
-        <p  class="codeBox">
-        &lt;pre&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br>
-        &lt;/pre&gt;
-        </p>
+            <p class="codeBox">
+                &lt;pre&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br>
+                &lt;/pre&gt;
+            </p>
 
-        <pre>
+            <pre>
             1
                    2
                            3  
@@ -464,167 +470,168 @@
                    6
             7
         </pre>
-    </div>  
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter12" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter12">Naamwijziging doorvoeren in html</label>
-    <div class="chapter-content">
-        <p  class="codeBox">Vroeger heette de club &lt;del&gt;ATTV&lt;/del&gt;nu &lt;ins datetime="2023-11-05"&gt;ATLV&lt;/ins&gt; bijvoorbeeld.<br></p>
-        <p>Vroeger heette de club <del>ATTV</del>nu <ins datetime="2023-11-05">ATLV</ins> bijvoorbeeld.<br></p>    
-    </div>  
+        <div class="chapter-content">
+            <p class="codeBox">Vroeger heette de club &lt;del&gt;ATTV&lt;/del&gt;nu &lt;ins datetime="2023-11-05"&gt;ATLV&lt;/ins&gt; bijvoorbeeld.<br></p>
+            <p>Vroeger heette de club <del>ATTV</del>nu <ins datetime="2023-11-05">ATLV</ins> bijvoorbeeld.<br></p>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter13" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter13">Weblinks of interne links en link voor bestand downloaden</label>
-    <div class="chapter-content">
-        <h3>externe link</h3>
-        <p  class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;link naar wikipedia&lt;/a&gt;</p>
-        <a href="www.wikipedia.org/" target="_blank">link naar wikipedia</a>
-        <h3>interne links</h3>
-        <p  class="codeBox">&lt;a href="index.html " target="_blank"&gt;Terug naar de index pagina&lt;/a&gt;</p>
-        <p  class="codeBox">&lt;a href="../index.html " target="_blank"&gt;de index pagina in onderliggende map&lt;/a&gt;</p>
-        <p  class="codeBox">&lt;a href="cursus/inex.html " target="_blank"&gt;de index pagina in bovenliggende map cursus&lt;/a&gt;</p>
-        <h3>link naar een bestand</h3>
-        <p  class="codeBox">&lt;href="PDF/cursus.pdf "&gt;PDF downloaden&lt;/a&gt;</p>
-    </div>  
+        <div class="chapter-content">
+            <h3>externe link</h3>
+            <p class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;link naar wikipedia&lt;/a&gt;</p>
+            <a href="www.wikipedia.org/" target="_blank">link naar wikipedia</a>
+            <h3>interne links</h3>
+            <p class="codeBox">&lt;a href="index.html " target="_blank"&gt;Terug naar de index pagina&lt;/a&gt;</p>
+            <p class="codeBox">&lt;a href="../index.html " target="_blank"&gt;de index pagina in onderliggende map&lt;/a&gt;</p>
+            <p class="codeBox">&lt;a href="cursus/inex.html " target="_blank"&gt;de index pagina in bovenliggende map cursus&lt;/a&gt;</p>
+            <h3>link naar een bestand</h3>
+            <p class="codeBox">&lt;href="PDF/cursus.pdf "&gt;PDF downloaden&lt;/a&gt;</p>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter14" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter14">Foto plaatsen</label>
-    <div class="chapter-content">
-        <p>Ik heb doelbewust de eerste afbeelding weggelaten in de map IMG zodat je ziet wat er komt te staan als er geen afbeelding is.</p>
+        <div class="chapter-content">
+            <p>Ik heb doelbewust de eerste afbeelding weggelaten in de map IMG zodat je ziet wat er komt te staan als er geen afbeelding is.</p>
 
-        <p  class="codeBox">
-        &lt;img src="img/geen_kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;
-        &lt;img src="img/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;</p>
-        
-        <img src="img/geen_kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje">
-        <img src="img/kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje"><br><br>
+            <p class="codeBox">
+                &lt;img src="img/geen_kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;
+                &lt;img src="img/kerk.jpg" width="50px" height="50px" alt="Afbeelding van kerk" title="kerk in spanje"&gt;</p>
 
-        Een jpg is altijd een vierkante foto met achtergrondopvulling, een gif of png kan wel transparant zijn terwijl gif toch nog een wit randje achterlaat.<br><br>
-        In volgend voorbeeld zien we het verschil tussen jpg, gif en png<br>
-        <p>
-            <img src="img/wikipedia.jpg" width="350" height="350" alt="Afbeelding van wikipedia">
-            <img src="img/wikipedia.gif" width="350" height="350" alt="Afbeelding van wikipedia">
-            <img src="img/wikipedia.png" width="350" height="350" alt="Afbeelding van wikipedia"></p>
+            <img src="img/geen_kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje">
+            <img src="img/kerk.jpg" width="50" height="50" alt="Afbeelding van kerk" title="kerk in spanje"><br><br>
 
-        <h3>Een foto als link gebruiken</h3>
-        <p  class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;&lt;img src="IMG/wikipedia.png" width="150px" height="150px" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"&gt;&lt;/a&gt;</p>
-        <a href="https://en.wikipedia.org/" target="_blank"><img src="IMG/wikipedia.png" width="150" height="150" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"></a><br>
-   
-    </div>  
+            Een jpg is altijd een vierkante foto met achtergrondopvulling, een gif of png kan wel transparant zijn terwijl gif toch nog een wit randje achterlaat.<br><br>
+            In volgend voorbeeld zien we het verschil tussen jpg, gif en png<br>
+            <p>
+                <img src="img/wikipedia.jpg" width="350" height="350" alt="Afbeelding van wikipedia">
+                <img src="img/wikipedia.gif" width="350" height="350" alt="Afbeelding van wikipedia">
+                <img src="img/wikipedia.png" width="350" height="350" alt="Afbeelding van wikipedia">
+            </p>
+
+            <h3>Een foto als link gebruiken</h3>
+            <p class="codeBox">&lt;a href="https://en.wikipedia.org/" target="_blank"&gt;&lt;img src="IMG/wikipedia.png" width="150px" height="150px" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"&gt;&lt;/a&gt;</p>
+            <a href="https://en.wikipedia.org/" target="_blank"><img src="IMG/wikipedia.png" width="150" height="150" alt="Afbeelding van wikipedia" title="wikipedia wereldbol"></a><br>
+
+        </div>
     </div>
 
-     <div class="chapter">
+    <div class="chapter">
         <input id="chapter15" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter15">Tabellen</label>
-    <div class="chapter-content">
-<p class="codeBox">
-        &#60;table&#62;<br>
-        <br>
-        &#60;caption&#62;Alle kamers&#60;/caption&#62; <br>
-        <br>                                                   
-        &#60;thead&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th colspan="2"&#62;Standard&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th colspan="2"&#62;Comfort&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;budget&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;suites&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;mini suite&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;01&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;16&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;32&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;52&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;72&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;90&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;93&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>                                        
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;15&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;31&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;51&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;71&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;89&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;93&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;96&#60;/td&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-        &#60;/thead&#62;<br>
-        <br>                                                   
-        &#60;tfoot&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;14&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;16&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;20&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;20&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;18&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;03&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;04&#60;/th&#62;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-        &#60;/tfoot&#62;<br>
-        <br>                               
-        &#60;/table&#62;  <br> 
-</p>
-        <table id="kamers">
-    
-        <caption>Alle kamers</caption> 
-                                                            
-        <thead>
-            <tr>
-                <th colspan="2">Standard</th>
-                <th colspan="2">Comfort</th>
-                <th>budget</th>
-                <th>suites</th>
-                <th>mini suite</th>
-            </tr>
-            <tr>    
-                <td>01</td>
-                <td>16</td>
-                <td>32</td>
-                <td>52</td>
-                <td>72</td>
-                <td>90</td>
-                <td>93</td>
-            </tr>
-                                                    
-            <tr>   
-                <td>15</td>
-                <td>31</td>
-                <td>51</td>
-                <td>71</td>
-                <td>89</td>
-                <td>93</td>
-                <td>96</td>
-            </tr> 
-        </thead>
-                                                            
-        <tfoot>
-            <tr>
-                <th>14</th>
-                <th>16</th>
-                <th>20</th>
-                <th>20</th>
-                <th>18</th>
-                <th>03</th>
-                <th>04</th>
-            </tr>
-        </tfoot>
-                                                               
-        </table>   
-    </div>  
+        <div class="chapter-content">
+            <p class="codeBox">
+                &#60;table&#62;<br>
+                <br>
+                &#60;caption&#62;Alle kamers&#60;/caption&#62; <br>
+                <br>
+                &#60;thead&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th colspan="2"&#62;Standard&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th colspan="2"&#62;Comfort&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;budget&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;suites&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;mini suite&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;01&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;16&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;32&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;52&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;72&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;90&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;93&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;15&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;31&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;51&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;71&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;89&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;93&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;96&#60;/td&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                &#60;/thead&#62;<br>
+                <br>
+                &#60;tfoot&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;14&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;16&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;20&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;20&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;18&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;03&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;04&#60;/th&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                &#60;/tfoot&#62;<br>
+                <br>
+                &#60;/table&#62; <br>
+            </p>
+            <table id="kamers">
+
+                <caption>Alle kamers</caption>
+
+                <thead>
+                    <tr>
+                        <th colspan="2">Standard</th>
+                        <th colspan="2">Comfort</th>
+                        <th>budget</th>
+                        <th>suites</th>
+                        <th>mini suite</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>52</td>
+                        <td>72</td>
+                        <td>90</td>
+                        <td>93</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>31</td>
+                        <td>51</td>
+                        <td>71</td>
+                        <td>89</td>
+                        <td>93</td>
+                        <td>96</td>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <th>14</th>
+                        <th>16</th>
+                        <th>20</th>
+                        <th>20</th>
+                        <th>18</th>
+                        <th>03</th>
+                        <th>04</th>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter16" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter16">HTML elementreferentie</label>
-    <div class="chapter-content">
-        <h2><a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a></h2>
-    <pre>
+        <div class="chapter-content">
+            <h2><a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school" target="_blank" hreflang="en">HTML elementreferentie van w3school</a></h2>
+            <pre>
             <span class="tabKlaar">&#60;!DOCTYPE&#62;</span>
             <span class="tabKlaar">&#60;a&#62;&#60;/a&#62;</span>
             <span class="tabOud">&#60;acronym&#62;&#60;/acronym&#62;</span> nu <span class="tabKlaar">&#60;abbr&#62;&#60;/abbr&#62;</span>
@@ -736,7 +743,7 @@
             <span class="tabKlaar">&#60;th&#62;&#60;/th&#62;</span>
             <span class="tabKlaar">&#60;thead&#62;&#60;/thead&#62;</span>
             &#60;time&#62;&#60;/time&#62;
-            &#60;title&#62;&#60;/title&#62;
+            <span class="tabKlaar">&#60;title&#62;&#60;/title&#62;</span>
             <span class="tabKlaar">&#60;tr&#62;&#60;/tr&#62;</span>
             &#60;track&#62;
             <span class="tabOud">&#60;tt&#62;&#60;/tt&#62;</span> nu via CSS
@@ -746,21 +753,26 @@
             &#60;video&#62;&#60;/video&#62;
             <span class="tabKlaar">&#60;wbr&#62;</span>
     </pre>
-    </div>
+        </div>
     </div>
 
     <div class="chapter">
         <input id="chapter17" type="checkbox" name="chapters">
         <label class="chapterlabel" for="chapter17">Handige links voor HTML gebruikers</label>
-    <div class="chapter-content">
-        <h2><a href="https://www.handleidinghtml.nl/html/elementen/elementen.html" title="HTML elementreferentie van w3school">HTML elementreferentie van handleidinghtml.nl</a><br>
+        <div class="chapter-content">
+            <h2><a href="https://www.handleidinghtml.nl/html/elementen/elementen.html" title="HTML elementreferentie van w3school">HTML elementreferentie van handleidinghtml.nl</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org/html</a>
+            </h2>
             <a href="https://www.w3schools.com/tags/default.asp" title="HTML elementreferentie van w3school">HTML elementreferentie van w3school</a><br>
             <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default">frontend-editor html-css-js</a><br>
             <a href="https://www.w3docs.com/tools/html-encoder/">HTML code omzetten</a><br>
             <a href="https://code.visualstudio.com/">HTML editor Visual Studio Code</a>
-            <a href="https://validator.w3.org/nu/">W3c HTML validator</a></h2>
-            </div>
+            <a href="https://validator.w3.org/nu/">W3c HTML validator</a>
+
+
+        </div>
     </div>
-            
-            </body> 
+
+</body>
+
 </html>
